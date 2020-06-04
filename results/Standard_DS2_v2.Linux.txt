@@ -1,0 +1,102 @@
+Name:               aks-lnx000-39615605-vmss000000
+Roles:              agent
+Labels:             agentpool=lnx000
+                    beta.kubernetes.io/arch=amd64
+                    beta.kubernetes.io/instance-type=Standard_DS2_v2
+                    beta.kubernetes.io/os=linux
+                    failure-domain.beta.kubernetes.io/region=westus2
+                    failure-domain.beta.kubernetes.io/zone=0
+                    kubernetes.azure.com/cluster=MC_cdw-pricingtest-20200603_cdw-pricingtest-20200603_westus2
+                    kubernetes.azure.com/role=agent
+                    kubernetes.io/arch=amd64
+                    kubernetes.io/hostname=aks-lnx000-39615605-vmss000000
+                    kubernetes.io/os=linux
+                    kubernetes.io/role=agent
+                    node-role.kubernetes.io/agent=
+                    storageprofile=managed
+                    storagetier=Premium_LRS
+Annotations:        node.alpha.kubernetes.io/ttl: 0
+                    volumes.kubernetes.io/controller-managed-attach-detach: true
+CreationTimestamp:  Thu, 04 Jun 2020 01:42:34 +0000
+Taints:             <none>
+Unschedulable:      false
+Lease:
+  HolderIdentity:  aks-lnx000-39615605-vmss000000
+  AcquireTime:     <unset>
+  RenewTime:       Thu, 04 Jun 2020 01:50:20 +0000
+Conditions:
+  Type             Status  LastHeartbeatTime                 LastTransitionTime                Reason                       Message
+  ----             ------  -----------------                 ------------------                ------                       -------
+  MemoryPressure   False   Thu, 04 Jun 2020 01:49:41 +0000   Thu, 04 Jun 2020 01:42:34 +0000   KubeletHasSufficientMemory   kubelet has sufficient memory available
+  DiskPressure     False   Thu, 04 Jun 2020 01:49:41 +0000   Thu, 04 Jun 2020 01:42:34 +0000   KubeletHasNoDiskPressure     kubelet has no disk pressure
+  PIDPressure      False   Thu, 04 Jun 2020 01:49:41 +0000   Thu, 04 Jun 2020 01:42:34 +0000   KubeletHasSufficientPID      kubelet has sufficient PID available
+  Ready            True    Thu, 04 Jun 2020 01:49:41 +0000   Thu, 04 Jun 2020 01:42:40 +0000   KubeletReady                 kubelet is posting ready status. AppArmor enabled
+Addresses:
+  Hostname:    aks-lnx000-39615605-vmss000000
+  InternalIP:  10.1.0.4
+Capacity:
+  attachable-volumes-azure-disk:  8
+  cpu:                            2
+  ephemeral-storage:              101445900Ki
+  hugepages-1Gi:                  0
+  hugepages-2Mi:                  0
+  memory:                         7113664Ki
+  pods:                           30
+Allocatable:
+  attachable-volumes-azure-disk:  8
+  cpu:                            1900m
+  ephemeral-storage:              93492541286
+  hugepages-1Gi:                  0
+  hugepages-2Mi:                  0
+  memory:                         4668352Ki
+  pods:                           30
+System Info:
+  Machine ID:                 d4cbd1e1f3754f93b643853531bbc55c
+  System UUID:                A7DBD2C6-5002-9048-AAE1-00AE4F73FD2F
+  Boot ID:                    64845716-dff4-4ae0-8512-6a8715ac3c8a
+  Kernel Version:             4.15.0-1082-azure
+  OS Image:                   Ubuntu 16.04.6 LTS
+  Operating System:           linux
+  Architecture:               amd64
+  Container Runtime Version:  docker://3.0.10+azure
+  Kubelet Version:            v1.16.9
+  Kube-Proxy Version:         v1.16.9
+ProviderID:                   azure:///subscriptions/b9c770d1-cde9-4da3-ae40-95ce1a4fac0c/resourceGroups/mc_cdw-pricingtest-20200603_cdw-pricingtest-20200603_westus2/providers/Microsoft.Compute/virtualMachineScaleSets/aks-lnx000-39615605-vmss/virtualMachines/0
+Non-terminated Pods:          (15 in total)
+  Namespace                   Name                                             CPU Requests  CPU Limits   Memory Requests  Memory Limits  AGE
+  ---------                   ----                                             ------------  ----------   ---------------  -------------  ---
+  gatekeeper-system           gatekeeper-controller-manager-94b959594-jch9z    100m (5%)     1500m (78%)  256Mi (5%)       1Gi (22%)      9m45s
+  kube-system                 azure-cni-networkmonitor-p5h9k                   0 (0%)        0 (0%)       0 (0%)           0 (0%)         7m43s
+  kube-system                 azure-ip-masq-agent-gm6wl                        100m (5%)     500m (26%)   50Mi (1%)        250Mi (5%)     7m43s
+  kube-system                 azure-policy-66d7db8dbb-lsnwp                    30m (1%)      100m (5%)    50Mi (1%)        200Mi (4%)     9m45s
+  kube-system                 azure-policy-webhook-6646b66bc8-vjsp4            30m (1%)      100m (5%)    50Mi (1%)        200Mi (4%)     9m46s
+  kube-system                 coredns-544d979687-fjzbs                         100m (5%)     0 (0%)       70Mi (1%)        170Mi (3%)     7m22s
+  kube-system                 coredns-544d979687-srznt                         100m (5%)     0 (0%)       70Mi (1%)        170Mi (3%)     9m49s
+  kube-system                 coredns-autoscaler-6d7bd69669-rmdpm              20m (1%)      0 (0%)       10Mi (0%)        0 (0%)         9m43s
+  kube-system                 dashboard-metrics-scraper-867cf6588-mwhg7        100m (5%)     100m (5%)    50Mi (1%)        500Mi (10%)    9m30s
+  kube-system                 kube-proxy-bz5sj                                 100m (5%)     0 (0%)       0 (0%)           0 (0%)         7m43s
+  kube-system                 kubernetes-dashboard-7f7676f7b5-wp46x            100m (5%)     100m (5%)    50Mi (1%)        500Mi (10%)    9m30s
+  kube-system                 metrics-server-6df44d5569-cdmqf                  44m (2%)      0 (0%)       55Mi (1%)        0 (0%)         9m48s
+  kube-system                 omsagent-7g5rg                                   75m (3%)      150m (7%)    225Mi (4%)       600Mi (13%)    7m43s
+  kube-system                 omsagent-rs-c78fc79bf-886b6                      150m (7%)     1 (52%)      250Mi (5%)       750Mi (16%)    9m48s
+  kube-system                 tunnelfront-5b9d4f457d-cw2tp                     10m (0%)      0 (0%)       64Mi (1%)        0 (0%)         8m26s
+Allocated resources:
+  (Total limits may be over 100 percent, i.e., overcommitted.)
+  Resource                       Requests      Limits
+  --------                       --------      ------
+  cpu                            1059m (55%)   3550m (186%)
+  memory                         1250Mi (27%)  4364Mi (95%)
+  ephemeral-storage              0 (0%)        0 (0%)
+  hugepages-1Gi                  0 (0%)        0 (0%)
+  hugepages-2Mi                  0 (0%)        0 (0%)
+  attachable-volumes-azure-disk  0             0
+Events:
+  Type    Reason                   Age                    From                                        Message
+  ----    ------                   ----                   ----                                        -------
+  Normal  Starting                 7m49s                  kubelet, aks-lnx000-39615605-vmss000000     Starting kubelet.
+  Normal  NodeHasSufficientMemory  7m48s (x2 over 7m48s)  kubelet, aks-lnx000-39615605-vmss000000     Node aks-lnx000-39615605-vmss000000 status is now: NodeHasSufficientMemory
+  Normal  NodeHasNoDiskPressure    7m48s (x2 over 7m48s)  kubelet, aks-lnx000-39615605-vmss000000     Node aks-lnx000-39615605-vmss000000 status is now: NodeHasNoDiskPressure
+  Normal  NodeHasSufficientPID     7m48s (x2 over 7m48s)  kubelet, aks-lnx000-39615605-vmss000000     Node aks-lnx000-39615605-vmss000000 status is now: NodeHasSufficientPID
+  Normal  NodeAllocatableEnforced  7m48s                  kubelet, aks-lnx000-39615605-vmss000000     Updated Node Allocatable limit across pods
+  Normal  NodeReady                7m42s                  kubelet, aks-lnx000-39615605-vmss000000     Node aks-lnx000-39615605-vmss000000 status is now: NodeReady
+  Normal  Starting                 7m28s                  kube-proxy, aks-lnx000-39615605-vmss000000  Starting kube-proxy.

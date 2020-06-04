@@ -1,0 +1,76 @@
+Name:               akswin001000000
+Roles:              agent
+Labels:             agentpool=win001
+                    beta.kubernetes.io/arch=amd64
+                    beta.kubernetes.io/instance-type=Standard_DS2_v2
+                    beta.kubernetes.io/os=windows
+                    failure-domain.beta.kubernetes.io/region=westus2
+                    failure-domain.beta.kubernetes.io/zone=0
+                    kubernetes.azure.com/cluster=MC_cdw-pricingtest-20200603_cdw-pricingtest-20200603_westus2
+                    kubernetes.azure.com/role=agent
+                    kubernetes.io/arch=amd64
+                    kubernetes.io/hostname=akswin001000000
+                    kubernetes.io/os=windows
+                    kubernetes.io/role=agent
+                    node-role.kubernetes.io/agent=
+                    storageprofile=managed
+                    storagetier=Premium_LRS
+Annotations:        node.alpha.kubernetes.io/ttl: 0
+                    volumes.kubernetes.io/controller-managed-attach-detach: true
+CreationTimestamp:  Thu, 04 Jun 2020 01:47:40 +0000
+Taints:             <none>
+Unschedulable:      false
+Lease:
+  HolderIdentity:  akswin001000000
+  AcquireTime:     <unset>
+  RenewTime:       Thu, 04 Jun 2020 01:52:32 +0000
+Conditions:
+  Type             Status  LastHeartbeatTime                 LastTransitionTime                Reason                       Message
+  ----             ------  -----------------                 ------------------                ------                       -------
+  MemoryPressure   False   Thu, 04 Jun 2020 01:51:40 +0000   Thu, 04 Jun 2020 01:47:40 +0000   KubeletHasSufficientMemory   kubelet has sufficient memory available
+  DiskPressure     False   Thu, 04 Jun 2020 01:51:40 +0000   Thu, 04 Jun 2020 01:47:40 +0000   KubeletHasNoDiskPressure     kubelet has no disk pressure
+  PIDPressure      False   Thu, 04 Jun 2020 01:51:40 +0000   Thu, 04 Jun 2020 01:47:40 +0000   KubeletHasSufficientPID      kubelet has sufficient PID available
+  Ready            True    Thu, 04 Jun 2020 01:51:40 +0000   Thu, 04 Jun 2020 01:47:40 +0000   KubeletReady                 kubelet is posting ready status
+Addresses:
+  Hostname:    akswin001000000
+  InternalIP:  10.1.0.35
+Capacity:
+  attachable-volumes-azure-disk:  8
+  cpu:                            2
+  ephemeral-storage:              104343548Ki
+  memory:                         7339572Ki
+  pods:                           30
+Allocatable:
+  attachable-volumes-azure-disk:  8
+  cpu:                            1900m
+  ephemeral-storage:              104343548Ki
+  memory:                         3565108Ki
+  pods:                           30
+System Info:
+  Machine ID:                 akswin001000000
+  System UUID:                E0C0278E-DF31-4317-AC03-BCA9DCE2A9A4
+  Boot ID:                    
+  Kernel Version:             10.0.17763.1158
+  OS Image:                   Windows Server 2019 Datacenter
+  Operating System:           windows
+  Architecture:               amd64
+  Container Runtime Version:  docker://19.3.5
+  Kubelet Version:            v1.16.9
+  Kube-Proxy Version:         v1.16.9
+ProviderID:                   azure:///subscriptions/b9c770d1-cde9-4da3-ae40-95ce1a4fac0c/resourceGroups/mc_cdw-pricingtest-20200603_cdw-pricingtest-20200603_westus2/providers/Microsoft.Compute/virtualMachineScaleSets/akswin001/virtualMachines/0
+Non-terminated Pods:          (0 in total)
+  Namespace                   Name    CPU Requests  CPU Limits  Memory Requests  Memory Limits  AGE
+  ---------                   ----    ------------  ----------  ---------------  -------------  ---
+Allocated resources:
+  (Total limits may be over 100 percent, i.e., overcommitted.)
+  Resource                       Requests  Limits
+  --------                       --------  ------
+  cpu                            0 (0%)    0 (0%)
+  memory                         0 (0%)    0 (0%)
+  ephemeral-storage              0 (0%)    0 (0%)
+  attachable-volumes-azure-disk  0         0
+Events:
+  Type    Reason                 Age                    From                      Message
+  ----    ------                 ----                   ----                      -------
+  Normal  Starting               4m53s                  kubelet, akswin001000000  Starting kubelet.
+  Normal  NodeHasNoDiskPressure  4m53s (x2 over 4m53s)  kubelet, akswin001000000  Node akswin001000000 status is now: NodeHasSufficientPID
